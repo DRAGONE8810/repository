@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="assets/icons/icon-logo-official.svg" type="image/png">
+    <title>Home - SCP-Mania</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/header-style.css">
+    <link rel="stylesheet" href="css/home-footer-style.css">
+    <link rel="stylesheet" href="css/home-main-style.css">    
+    <link rel="stylesheet" href="css/home-game-mechanics-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Vintage Story is an uncompromising wilderness survival sandbox game inspired by lovecraftian horror themes. 
+                Find yourself in a ruined world reclaimed by nature and permeated by unnerving temporal disturbances. 
+                Relive the advent of human civilization, or take your own path.">
+    <script src="profile-user.js"></script>
+    
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="home-page.html">
+        <img src="assets/icons/icon-logo-official.svg" alt="Logo" width="40" height="40">
+      </a>
+    </div>
+
+    <!-- Botón menú móvil -->
+    <button id="mobile-menu-btn" aria-label="Toggle menu">
+      <img src="assets/icons/icon-menu-list.svg" alt="Menu" width="28" height="28">
+    </button>
+
+    <!-- Menú principal y de usuario unificado -->
+    <nav class="main-nav">
+      <ul>
+        <!-- Links principales -->
+        <li><a href="#"><img src="assets/icons/icon-home.svg" alt=""><span>Home</span></a></li>
+        <li><a href="shop.html"><img src="assets/icons/icon-shopping-cart.svg" alt=""><span>Shop</span></a></li>
+        <li><a href="ranks.html"><img src="assets/icons/icon-rank.svg" alt=""><span>Ranks</span></a></li>
+        <li><a href="wiki.html"><img src="assets/icons/icon-globe.svg" alt=""><span>Wiki</span></a></li>
+        <li><a href="help.html"><img src="assets/icons/icon-feedback-help.svg" alt=""><span>Help</span></a></li>
+        
+        <!-- Separador opcional -->
+        <li class="separator"></li>
+
+        <!-- Links de usuario -->
+        <li><a href="profile.html"><img src="assets/icons/icon-profile-user.svg" alt=""><span>Profile</span></a></li>
+        <li><a href="settings.html"><img src="assets/icons/icon-setting.svg" alt=""><span>Settings</span></a></li>
+        <li><a href="logout.html"><img src="assets/icons/icon-logout.svg" alt=""><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="game-main">
+    <section class="hero">
+      <img src="assets/images-png/SCP-1-background01.png" alt="Imagen del juego" class="hero-img">
+      <button class="download-btn">Descargar</button>
+      <p class="short-desc">Sumérgete en la aventura épica de nuestro juego más esperado.</p>
+    </section>
+
+    <section class="game-description">
+      <h2>Acerca del Juego</h2>
+      <p>
+        Explora un mundo vibrante lleno de desafíos, secretos y enemigos únicos.
+        Construye, combate y colabora con amigos mientras descubres la historia que se oculta detrás de cada esquina.
+      </p>
+      <div class="desc-images">
+        <img src="assets/images-png/SCP-0-place01.png" alt="Captura del juego 1">
+        <img src="assets/images-png/SCP-0-place02.png" alt="Captura del juego 2">
+        <img src="assets/images-png/SCP-0-place03.png" alt="Captura del juego 3">
+      </div>
+    </section>
+
+  <section class="game-intro">
+  <img src="assets/images-png/scp-ghost-town-logo.avif" alt="Imagen general del juego">
+  <div class="intro-text">
+    <h2 data-text="Bienvenido al Juego">Bienvenido al Juego</h2>
+    <p>
+      Explora un universo dinámico donde la creatividad, la acción y la estrategia se combinan 
+      para darte una experiencia única. Construye, lucha y descubre secretos ocultos en cada rincón.
+    </p>
+  </div>
+</section>
+
+<!-- Sección de mecánicas -->
+<section class="game-mechanics">
+  <h2>Mecánicas del Juego</h2>
+  
+  <div class="mechanic">
+    <img src="assets/images-png/SCP-classd.png" alt="Construcción">
+    <div class="mechanic-text">
+      <h2>Construcción</h2>
+      <p>Usa herramientas y recursos para crear estructuras impresionantes.</p>
+      <p>Start out empty-handed in the stone age and learn to survive by foraging, 
+        hunting, crafting, and fighting. Live through the four seasons and advance 
+        further by smelting copper for more powerful tools, creating bronze alloys,
+        learning to work iron, mechanize common tasks and ultimately reach the steel age.
+      </p>
+    </div>
+  </div>
+
+  <div class="mechanic">
+    <img src="assets/images-png/SCP-scientist.png" alt="Combate">
+    <div class="mechanic-text">
+      <h2>Combate</h2>
+      <p>Enfréntate a enemigos con un sistema dinámico y desafiante.</p>
+      <p>Start out empty-handed in the stone age and learn to survive by foraging, 
+        hunting, crafting, and fighting. Live through the four seasons and advance 
+        further by smelting copper for more powerful tools, creating bronze alloys,
+        learning to work iron, mechanize common tasks and ultimately reach the steel age.
+      </p>
+    </div>
+  </div>
+
+  <div class="mechanic">
+    <img src="assets/images-png/SCP-mtf.png" alt="Exploración">
+    <div class="mechanic-text">
+      <h2>Exploración</h2>
+      <p>Descubre biomas únicos, cuevas misteriosas y tesoros ocultos.</p>
+      <p>Start out empty-handed in the stone age and learn to survive by foraging, 
+        hunting, crafting, and fighting. Live through the four seasons and advance 
+        further by smelting copper for more powerful tools, creating bronze alloys,
+        learning to work iron, mechanize common tasks and ultimately reach the steel age.
+      </p>
+    </div>
+  </div>
+
+  <div class="mechanic">
+    <img src="assets/images-png/SCP-chaos.png" alt="Cooperación">
+    <div class="mechanic-text">
+      <h2>Cooperación</h2>
+      <p>Juega con amigos y comparte aventuras en mundos infinitos.</p>
+      <p>Start out empty-handed in the stone age and learn to survive by foraging, 
+        hunting, crafting, and fighting. Live through the four seasons and advance 
+        further by smelting copper for more powerful tools, creating bronze alloys,
+        learning to work iron, mechanize common tasks and ultimately reach the steel age.
+      </p>
+    </div>
+  </div>
+
+  <div class="mechanic">
+    <img src="assets/images-png/SCP939.png" alt="Progresión">
+    <div class="mechanic-text">
+      <h2>Progresión</h2>
+      <p>Mejora tus habilidades y desbloquea nuevas posibilidades.</p>
+      <p>Start out empty-handed in the stone age and learn to survive by foraging, 
+        hunting, crafting, and fighting. Live through the four seasons and advance 
+        further by smelting copper for more powerful tools, creating bronze alloys,
+        learning to work iron, mechanize common tasks and ultimately reach the steel age.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+
+    <section class="system-requirements">
+      <h2>Requisitos del Sistema</h2>
+
+      <div class="requirements-block">
+        <h3>Mínimos</h3>
+        <ul>
+          <li>64-bit processor and operating system</li>
+          <li>Operating System: Windows 10 21H1+/11, x64</li>
+          <li>CPU: Intel i5 6600 or equivalent, 4 threads</li>
+          <li>Memory: 4 GB RAM</li>
+          <li>Video: NVIDIA GTX 1050 Ti or equivalent, 4GB VRAM, Intel Integrated Graphics not supported</li>
+          <li>Storage: 8 GB available space</li>
+        </ul>
+      </div>
+      <div class="requirements-block">
+        <h3>Recomendados</h3>
+        <ul>
+          <li>64-bit processor and operating system</li>
+          <li>Operating System: Windows 10 21H1+/11, x64</li>
+          <li>CPU: Intel i7 6700 or equivalent, 8 threads</li>
+          <li>Memory: 6 GB RAM</li>
+          <li>Video: NVIDIA RTX 3060 or equivalent, 8GB VRAM, Intel Integrated Graphics not supported</li>
+          <li>Storage: 8 GB available space</li>
+        </ul>
+      </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="assets/icons/icon-logo-official.svg" alt="Logo Oficial" width="120">
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="footer-socials">
+      <a href="#" aria-label="Discord"><img src="assets/icons/social-media/discord.svg" alt=""></a>
+      <a href="#" aria-label="Facebook"><img src="assets/icons/social-media/facebook.svg" alt=""></a>
+      <a href="#" aria-label="Instagram"><img src="assets/icons/social-media/instagram.svg" alt=""></a>
+      <a href="#" aria-label="Patreon"><img src="assets/icons/social-media/patreon.svg" alt=""></a>
+      <a href="#" aria-label="Reddit"><img src="assets/icons/social-media/reddit.svg" alt=""></a>
+      <a href="#" aria-label="Steam"><img src="assets/icons/social-media/steam.svg" alt=""></a>
+      <a href="#" aria-label="Twitch"><img src="assets/icons/social-media/twitch.svg" alt=""></a>
+      <a href="#" aria-label="Twitter"><img src="assets/icons/social-media/twitter.svg" alt=""></a>
+      <a href="#" aria-label="YouTube"><img src="assets/icons/social-media/youtube.svg" alt=""></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <!-- Derechos de autor -->
+    <p>© 2025 Anego Studios SIA. All Rights Reserved.</p>
+
+    <!-- Enlaces legales -->
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Career</a>
+      <a href="#">Refund Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

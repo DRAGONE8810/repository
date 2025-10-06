@@ -1,0 +1,173 @@
+:root {
+  --cerulean: rgb(238, 255, 0);
+  --non-photo-blue: rgb(247, 229, 226);
+  --sunglow: rgb(224, 184, 42);
+  --raisin-black: rgb(42, 42, 37);
+  --main-gradient: linear-gradient(90deg, #881700, #ffd000, #04045b);
+}
+
+.game-main {
+  padding: 3rem 2rem;
+  color: var(--non-photo-blue);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, rgba(42,42,37,1) 0%, rgba(20,20,20,1) 100%);
+}
+
+/* Intro general */
+.game-intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-intro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #04045b; /* glow similar a mechanics */
+}
+
+.game-intro img {
+  flex: 1 1 400px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.game-intro img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgb(0, 0, 0);
+}
+
+.intro-text {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.intro-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  background: var(--main-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--non-photo-blue); /* fallback */
+  display: inline-block;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--non-photo-blue);
+}
+
+/* Mecánicas */
+.game-mechanics {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.game-mechanics h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--non-photo-blue);
+}
+
+.mechanic {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mechanic:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(136, 23, 0, 0.6);
+}
+
+.mechanic img {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mechanic img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.114);
+}
+
+.mechanic-text {
+  flex: 1;
+}
+
+.mechanic-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--sunglow);
+}
+
+.mechanic-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--non-photo-blue);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .game-intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .game-intro img {
+    flex: none;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .intro-text {
+    flex: none;
+    width: 90%;
+    text-align: center;
+  }
+
+  .mechanic {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mechanic img {
+    width: 40%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .mechanic-text {
+    text-align: center;
+  }
+}
